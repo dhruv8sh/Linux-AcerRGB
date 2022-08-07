@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+ <AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dhruv8sh.Controller" stylesheets="@acer_rgb_base.css" styleClass="root">
+     <!--             Mode Menu-->
+     <MenuButton id="modeButton" fx:id="modeBut" alignment="CENTER" cache="true" contentDisplay="CENTER" layoutX="21.0" layoutY="24.0" prefHeight="48.0" prefWidth="330.0" styleClass="combo-box" text="Wave">
+         <items>
+             <MenuItem onAction="#zoomMode" styleClass="menuitem" text="Zoom" />
+             <MenuItem onAction="#neonMode" styleClass="menuitem" text="Neon" />
+             <MenuItem onAction="#breathingMode" styleClass="menuitem" text="Breathe" />
+             <MenuItem mnemonicParsing="false" onAction="#staticMode" styleClass="menuitem" text="Static" />
+             <MenuItem mnemonicParsing="false" onAction="#waveMode" styleClass="menuitem" text="Wave" />
+             <MenuItem mnemonicParsing="false" onAction="#shiftingMode" styleClass="menuitem" text="Shifting" />
+         </items>
+     </MenuButton>
+     <!--             Color Picker-->
+     <ColorPicker id="colorButton" fx:id="colorPicker" cache="true" customColors="Blue" disable="true" layoutX="21.0" layoutY="102.0" prefHeight="48.0" prefWidth="156.0" styleClass="color-picker" />
+     <!--         Speed Label   -->
+     <Label cache="true" layoutX="328.0" layoutY="150.0" prefHeight="48.0" prefWidth="51.0" styleClass="label" text="Speed:" />
+     <!--            Brightness Label-->
+     <Label cache="true" layoutX="59.0" layoutY="282.0" prefHeight="25.0" prefWidth="79.0" styleClass="label"  text="Brighntess:" />
+     <!--            Speed Slider-->
+     <Slider fx:id="speed" cache="true" layoutX="379.0" layoutY="24.0" majorTickUnit="2.0" max="10.0" minorTickCount="1" orientation="VERTICAL" prefHeight="300.0" prefWidth="80.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" styleClass="slider" stylesheets="@acer_rgb_base.css" value="5.0" />
+     <!--            Brightness Slider-->
+     <Slider fx:id="brightness" cache="true" layoutX="52.0" layoutY="313.0" prefHeight="48.0" prefWidth="300.0" showTickLabels="true" styleClass="slider" value="50.0" />
+     <Button fx:id="invertButton" layoutX="193.0" layoutY="102.0" mnemonicParsing="false" onAction="#invertDirection" prefHeight="48.0" prefWidth="156.0" text="Invert Direction" />
+ </AnchorPane>

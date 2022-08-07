@@ -1,0 +1,70 @@
+.root {
+    -fx-background-color: #303030;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+
+.slider {
+    -fx-background-color:transparent;
+    -show-value-on-interaction: true;
+}
+.slider .track {
+    -fx-background-color: #404040;
+}
+.slider .thumb {
+    -fx-background-color: #505050;
+}
+
+.slider .thumb:pressed{
+    -fx-background-color: #404040;
+}
+
+.slider .thumb:hover{
+    -fx-background-color: #404040;
+}
+
+.button {
+    -fx-padding : 15 15 15 15;
+    -fx-border-radius: 50px;
+    -fx-background-color:#404040;
+    -fx-text-fill : white;
+}
+.button:hover {
+    -fx-padding : 15 15 15 15;
+    -fx-border-radius: 50px;
+    -fx-background-color:#505050;
+    -fx-text-fill : #ffffff;
+}
+
+
+.combo-box{
+    -fx-background-color: #404040;
+}
+.combo-box: hover{
+    -fx-background-color: #505050;
+}
+.context-menu {
+   -fx-background-color: #303030;
+}
+
+
+.menuitem{
+    -fx-background-color: transparent ;
+    -fx-text-fill: white ;
+    -fx-padding: 5 70 5 70;
+}
+.menuitem:hover{
+    -fx-background-color: #505050;
+    -fx-text-fill: white ;
+    -fx-padding: 5 70 5 70;
+}
+.color-picker {
+-fx-background-color: #404040;
+}
+
+.color-picker: hover {
+-fx-background-color: #505050;
+}
